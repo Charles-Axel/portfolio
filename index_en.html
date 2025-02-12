@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Axel CHARLES Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/png" href="images/portfolio_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="name">Axel CHARLES</div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#projets" onclick="closeMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <li>
+            <div class="custom-select-container">
+              <div class="custom-select">
+                <div class="custom-select-trigger" onclick="toggleOptions()">
+                  <img
+                    id="selectedImage"
+                    src="https://flagcdn.com/w40/gb.png"
+                    alt="English"
+                  />
+                  <span id="selectedText">English</span>
+                </div>
+                <div class="custom-select-options" id="optionsList">
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/gb.png', 'English', 'index_en.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div>
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/fr.png', 'French', 'index.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/fr.png" alt="French" />
+                    <span>French</span>
+                  </div>
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/es.png', 'Spanish', 'index_es.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/es.png" alt="Spanish" />
+                    <span>Spanish</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="home" class="home-banner">
+        <div class="home-text">
+          <p>Hi, I'm</p>
+          <h2>Axel CHARLES</h2>
+          <p><span>Junior</span> Developer</p>
+          <div class="home-buttons">
+            <a href="CV_Axel_CHARLES.pdf" download class="home-cv">
+              Download my CV</a
+            >
+            <a href="#contact" class="home-contact">Contact me</a>
+          </div>
+          <div class="home-links">
+            <a href="https://www.linkedin.com/in/axel-charles/" target="_blank"
+              ><img src="images/linkedin.png" alt="Linkedin"
+            /></a>
+            <a href="https://github.com/Charles-Axel" target="_blank"
+              ><img src="images/github.png" alt="GitHub"
+            /></a>
+          </div>
+        </div>
+        <img
+          src="images/photo_axel.png"
+          alt="Profile picture"
+          class="home-photo"
+          loading="lazy"
+        />
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="main-text">
+        <img src="images/ordinateur.jpg" alt="Computer image" />
+        <p>
+          My name is Axel CHARLES, a second-year student in Computer Science at
+          IUT de Lens. Passionate about IT and Esports, I am particularly
+          interested in web development and database management.
+          <br />
+          <br />
+          I am proficient in several programming languages, including Java,
+          Python with Flask, and PHP with Laravel. I enjoy working in a team and
+          am constantly motivated to learn and take on new challenges.
+          <br />
+          <br />
+          Dynamic, persevering, and innovative, I like to find creative
+          solutions to technical problems. My experiences have strengthened my
+          teamwork skills and my ability to adapt to different environments.
+        </p>
+      </section>
+
+      <section class="main-competences">
+        <h3>My skills / My tools</h3>
+        <div class="competences-container">
+          <div class="competence-card">
+            <span
+              >HTML<img src="images/competences/html.png" alt="HTML logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >CSS<img src="images/competences/css.png" alt="CSS logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >TypeScript<img
+                src="images/competences/typescript.png"
+                alt="TypeScript logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Laravel<img
+                src="images/competences/laravel.png"
+                alt="Laravel logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Flask<img src="images/competences/flask.png" alt="Flask logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Java<img src="images/competences/java.png" alt="Java logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Python<img src="images/competences/python.svg" alt="Python logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >PHP<img src="images/competences/php.svg" alt="PHP logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >JetBrains Suite<img
+                src="images/competences/jetbrains.png"
+                alt="JetBrains logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Git<img src="images/competences/git.png" alt="Git logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Eclipse<img
+                src="images/competences/eclipse.svg"
+                alt="Eclipse logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >VSCode<img src="images/competences/vscode.png" alt="VSCode logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >SQL<img src="images/competences/sql.jpg" alt="SQL logo"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >PostgreSQL<img
+                src="images/competences/postgresql.png"
+                alt="PostgreSQL logo"
+            /></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="projets-buttons">
+        <a href="#projets"
+          ><button id="button1" class="projets-title">My projects</button></a
+        >
+        <a href="#projetsSae"
+          ><button id="button2" class="projets-title">
+            My SAE projects
+          </button></a
+        >
+        <a href="#projetsCours"
+          ><button id="button3" class="projets-title">
+            My course projects
+          </button></a
+        >
+      </div>
+
+      <section id="projets" class="projets-section">
+        <!-- projets container -->
+        <div class="projets-container">
+          <div class="projets-item">
+            <h3 class="item-title">Loldle</h3>
+            <img
+              src="images/projets/loldle_logo.png"
+              alt="Loldle"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Loldle</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ❌</p>
+                  <p>🕙 : 60 h</p>
+                </div>
+                <img
+                  src="images/projets/loldle_logo.png"
+                  alt="Loldle"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  This project is a game inspired by "Wordle," but with
+                  characters from the League of Legends universe. The goal is to
+                  guess a League of Legends champion based on clues that change
+                  with each turn. The project is developed in Java using JavaFX
+                  for the graphical interface and Derby JDBC for database
+                  management.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                  <li>Derby JDBC</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Interactive user interface with dynamic elements.</li>
+                  <li>Database management to store champions and scores.</li>
+                  <li>Game logic with progressive clues for each attempt.</li>
+                  <li>Colorblind mode that changes certain colors.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img src="images/projets/loldle.png" alt="Loldle 1" />
+                <img src="images/projets/loldle_daltonien.png" alt="Loldle 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Haven Store</h3>
+            <img
+              src="images/projets/store_logo.png"
+              alt="Haven Store"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Haven Store</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ❌</p>
+                  <p>🕙 : 15 h</p>
+                </div>
+                <img
+                  src="images/projets/store_logo.png"
+                  alt="Haven Store"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  The "Haven Store" project is an online store designed to offer
+                  a smooth and secure shopping experience, showcasing trendy and
+                  quality products ranging from clothing to accessories. The
+                  site is structured into several key sections to meet user
+                  needs.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Display of products with prices and search filters.</li>
+                  <li>User login and registration.</li>
+                  <li>Profile display and information modification.</li>
+                  <li>Detailed product display.</li>
+                  <li>Cart composed of ordered items.</li>
+                  <li>Site summary and useful links.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/store_accueil.png"
+                  alt="Haven Store 1"
+                />
+                <img src="images/projets/store_login.png" alt="Haven Store 2" />
+                <img
+                  src="images/projets/store_register.png"
+                  alt="Haven Store 3"
+                />
+                <img
+                  src="images/projets/store_dashboard.png"
+                  alt="Haven Store 4"
+                />
+                <img
+                  src="images/projets/strore_filtre.png"
+                  alt="Haven Store 5"
+                />
+                <img
+                  src="images/projets/store_panier.png"
+                  alt="Haven Store 6"
+                />
+                <img src="images/projets/store_item.png" alt="Haven Store 7" />
+                <img
+                  src="images/projets/store_footer.png"
+                  alt="Haven Store 8"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">PolyCardia</h3>
+            <img
+              src="images/projets/polycardia_logo.png"
+              s
+              alt="PolyCardia"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">PolyCardia</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ✅</p>
+                  <p>🕙 : in progress ...</p>
+                </div>
+                <img
+                  src="images/projets/polycardia_logo.png"
+                  alt="PolyCardia"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Polycardia is a card game website based on the universe of
+                  various video games. It is developed in Python and Flask, with
+                  an SQLite database for storing cards and users. The game
+                  allows users to collect cards, and in the future, build their
+                  own deck and participate in battles.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Collection and management of cards in a database.</li>
+                  <li>Profile creation and user management.</li>
+                  <li>Deck combat mode (coming soon).</li>
+                  <li>Timer to open a booster for free.</li>
+                  <li>Currency to speed up the timer.</li>
+                  <li>Quests to earn currency (coming soon).</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/polycardia_accueil.png"
+                  alt="PolyCardia 1"
+                />
+                <img
+                  src="images/projets/polycardia_login.png"
+                  alt="PolyCardia 2"
+                />
+                <img
+                  src="images/projets/polycardia_pull.png"
+                  alt="PolyCardia 3"
+                />
+                <img
+                  src="images/projets/polycardia_booster.png"
+                  alt="PolyCardia 4"
+                />
+                <img
+                  src="images/projets/polycardia_timer.png"
+                  alt="PolyCardia 5"
+                />
+                <img
+                  src="images/projets/polycardia_cards.png"
+                  alt="PolyCardia 6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Blackjack</h3>
+            <img
+              src="images/projets/blackjack_logo.png"
+              alt="Blackjack"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Blackjack</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ❌</p>
+                  <p>🕙 : 15 h</p>
+                </div>
+                <img
+                  src="images/projets/blackjack_logo.png"
+                  alt="Blackjack"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  This project implements the card game Blackjack against a
+                  computer. It uses Java and JavaFX to create a smooth interface
+                  where the user can draw cards, stand, or request a new card.
+                  The Java backend handles the game logic, including score
+                  calculation rules and comparison with the computer's hand. The
+                  goal is to reach a score of 21 or get as close as possible
+                  without exceeding it.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Interactive user interface with JavaFX.</li>
+                  <li>Game logic management with automatic card drawing.</li>
+                  <li>Score calculation and real-time result display.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img src="images/projets/blackjack.png" alt="Blackjack 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetsSae" class="projets-section">
+        <!-- projets container -->
+        <div class="projets-container">
+          <div class="projets-item">
+            <h3 class="item-title">Competition Management</h3>
+            <img
+              src="images/projets/competition_logo.png"
+              alt="Competitions"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Competition Management</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ✅</p>
+                  <p>🕙 : 24 h</p>
+                </div>
+                <img
+                  src="images/projets/competition_logo.png"
+                  alt="Competitions"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  This project is a website that allows automated management of
+                  competitions. It is built with PHP for the server side, with
+                  SQLite for managing participant and result data. The interface
+                  is created with HTML and CSS, providing a smooth and
+                  professional experience for organizers and participants. This
+                  site includes features such as participant registration,
+                  real-time result updates, and leaderboard consultation.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Creation of competitions, teams, challenges, etc.</li>
+                  <li>Real-time leaderboard updates.</li>
+                  <li>Profile management.</li>
+                  <li>Admin rights management.</li>
+                  <li>Export results in Markdown.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/competition_accueil.png"
+                  alt="Competitions 1"
+                />
+                <img
+                  src="images/projets/competition_accueil2.png"
+                  alt="Competitions 2"
+                />
+                <img
+                  src="images/projets/competition_challenges.png"
+                  alt="Competitions 3"
+                />
+                <img
+                  src="images/projets/competition_competition.png"
+                  alt="Competitions 4"
+                />
+                <img
+                  src="images/projets/competition_equipes.png"
+                  alt="Competitions 5"
+                />
+                <img
+                  src="images/projets/competition_classement.png"
+                  alt="Competitions 6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Web Marathon - Travels</h3>
+            <img
+              src="images/projets/marathon_logo.png"
+              alt="Web Marathon"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Web Marathon - Travels</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ✅</p>
+                  <p>🕙 : 36 h</p>
+                </div>
+                <img
+                  src="images/projets/marathon_logo.png"
+                  alt="Web Marathon"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  A travel journal management site. It allows users to create,
+                  edit, view, and delete travel entries using a CRUD (Create,
+                  Read, Update, Delete) system. The site also includes
+                  interactive features such as the ability to leave comments and
+                  like other users' posts. This project is developed in PHP for
+                  backend management, with HTML and CSS for creating the user
+                  interface. It allows travelers to share their experiences and
+                  receive feedback from the community.
+                  <br />
+                  <br />
+                  This project was done in a group of 7 and in collaboration
+                  with students from another department (Design, Graphics, etc.)
+                  within a 36-hour time frame.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>
+                    Creation, editing, and deletion of trips, stages, and photo
+                    additions.
+                  </li>
+                  <li>Viewing the trip and each stage.</li>
+                  <li>Filtering trips by seas and oceans.</li>
+                  <li>Commenting and liking other users' trips.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/marathon_accueil.png"
+                  alt="Web Marathon 1"
+                />
+                <img
+                  src="images/projets/marathon_non_publies.png"
+                  alt="Web Marathon 2"
+                />
+                <img
+                  src="images/projets/marathon_voyage.png"
+                  alt="Web Marathon 3"
+                />
+                <img
+                  src="images/projets/marathon_etapes.png"
+                  alt="Web Marathon 4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">LensJudge</h3>
+            <img
+              src="images/projets/lensjudge_logo.png"
+              alt="LensJudge"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">LensJudge</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ✅</p>
+                  <p>🕙 : 35 h</p>
+                </div>
+                <img
+                  src="images/projets/lensjudge_logo.png"
+                  alt="LensJudge"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  An automatic judging system designed for programming
+                  competitions. It allows users to submit a code file in one of
+                  the following four programming languages: Python, Java, C, and
+                  C++. The system compares the output generated by the program
+                  with an expected answer after compiling and executing the
+                  code. This project is developed in Java and aims to automate
+                  the evaluation of proposed solutions during competitions or
+                  programming exams. It offers an efficient solution for
+                  verifying answers in various languages.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Java</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Support for 4 languages: Python, Java, C, and C++.</li>
+                  <li>
+                    Automatic compilation and execution of submitted programs.
+                  </li>
+                  <li>Comparison of outputs with an expected answer.</li>
+                  <li>Handling of compilation and runtime errors.</li>
+                  <li>Detailed reports for each submission.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img src="images/projets/lensJudge.png" alt="LensJudge 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetsCourses" class="projets-section">
+        <!-- projets container -->
+        <div class="projets-container">
+          <div class="projets-item">
+            <h3 class="item-title">Bomberman</h3>
+            <img
+              src="images/projets/bomberman_logo.png"
+              alt="Bomberman"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Bomberman</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ✅</p>
+                  <p>🕙 : 40 h</p>
+                </div>
+                <img
+                  src="images/projets/bomberman_logo.png"
+                  alt="Bomberman"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  An adaptation of the classic Bomberman game, developed in Java
+                  with JavaFX. The game involves placing bombs to destroy
+                  obstacles and eliminate opponents. The project includes
+                  managing player movements, explosions, and collisions in a 2D
+                  environment. The JavaFX interface allows dynamic and
+                  interactive display of game elements, with simple controls for
+                  player movements and actions.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Placing bombs.</li>
+                  <li>Movement in the environment.</li>
+                  <li>Random enemy movements.</li>
+                  <li>Different maps and wall configurations.</li>
+                  <li>Various types of bombs.</li>
+                  <li>Number of lives.</li>
+                  <li>Interactions between objects.</li>
+                  <li>Music based on the map.</li>
+                </ul>
+              </div>
+              <div class="extra-images">
+                <img src="images/projets/bomberman1.png" alt="Bomberman 1" />
+                <img src="images/projets/bomberman2.png" alt="Bomberman 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">The price is right</h3>
+            <img
+              src="images/projets/price_logo.png"
+              alt="The price is right"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">The price is right</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ✅</p>
+                  <p>🕙 : 12 h</p>
+                </div>
+                <img
+                  src="images/projets/price_logo.png"
+                  alt="The price is right"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Inspired by the TV show, this project allows users to guess
+                  the price of items. It uses Python for logic and to
+                  communicate with an API that provides the actual prices of
+                  items from Amazon. The frontend is created with HTML and CSS,
+                  offering an interactive interface where users can submit their
+                  answers and get real-time feedback. We chose a Minecraft theme
+                  for the sound effects and decorations, as we had the freedom
+                  to choose a fun style.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>API</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Add an item.</li>
+                  <li>Homepage with menu.</li>
+                  <li>Day/Night mode.</li>
+                  <li>Scoreboard.</li>
+                  <li>Themes for each item category.</li>
+                  <li>EN/FR translation.</li>
+                  <li>Multiplayer mode.</li>
+                  <li>Sound effects for certain actions.</li>
+                </ul>
+              </div>
+              <div class="extra-images">
+                <img
+                  src="images/projets/price_accueil.png"
+                  alt="The price is right 1"
+                />
+                <img
+                  src="images/projets/price_ajout.png"
+                  alt="The price is right 2"
+                />
+                <img
+                  src="images/projets/price_submit.png"
+                  alt="The price is right 3"
+                />
+                <img
+                  src="images/projets/price_english.png"
+                  alt="The price is right 4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Connect 4</h3>
+            <img
+              src="images/projets/puissance4_logo.png"
+              alt="Connect 4"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Connect 4</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>Teamwork: ❌</p>
+                  <p>🕙 : 8 h</p>
+                </div>
+                <img
+                  src="images/projets/puissance4_logo.png"
+                  alt="Connect 4"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  A digital version of the Connect 4 game developed in Java with
+                  JavaFX. The game allows the user to play against another
+                  player in local mode. The game logic handles the rules for
+                  placing pieces, checking winning lines (horizontal, vertical,
+                  and diagonal), and interacting with the graphical interface.
+                </p>
+                <hr />
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                </ul>
+                <strong>Features:</strong>
+                <ul>
+                  <li>Placing pieces in columns.</li>
+                  <li>Alternating turns between two players.</li>
+                  <li>Checking win conditions.</li>
+                  <li>Updating the high score.</li>
+                </ul>
+              </div>
+              <div class="extra-images">
+                <img src="images/projets/puissance4.png" alt="Connect 4 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>Axel CHARLES</h2>
+      <div class="footer-contact">
+        <ul>
+          <li>
+            <img src="images/mail.png" />
+            <p>charlesaxel59@gmail.com</p>
+          </li>
+          <li>
+            <img src="images/phone.png" />
+            <p>06 19 75 48 54</p>
+          </li>
+          <li>
+            <img src="images/position.png" />
+            <p>
+              Nord, France
+              <img
+                class="footer-flag"
+                src="images/french_flag.jpg"
+                alt="drapeau français"
+              />
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/axel-charles/" target="_blank"
+          ><img src="images/linkedin_white.png" alt="Linkedin"
+        /></a>
+        <a href="https://github.com/Charles-Axel" target="_blank"
+          ><img src="images/github_white.png" alt="GitHub"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

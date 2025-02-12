@@ -1,0 +1,211 @@
+/* Section des projets */
+.projets-section {
+  display: none; /* Masqué par défaut */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 10px;
+  background-color: var(--white-color);
+}
+
+/* Conteneur des projets */
+.projets-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Carte de projet */
+.projets-item {
+  position: relative;
+  width: 300px;
+  min-height: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+}
+
+.projets-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Titre du projet */
+.item-title {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 12px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 8px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.item-info {
+  display: flex;
+  gap: 50px;
+}
+
+/* Image du projet */
+.item-image {
+  max-height: 150px;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0 0 0;
+  object-fit: cover;
+}
+
+/* Texte descriptif du projet */
+.item-text {
+  padding: 15px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.item-text p {
+  margin-bottom: 10px;
+}
+
+.item-text hr {
+  margin: 5px 0;
+}
+
+.item-text li {
+  margin: 5px 0 5px 25px;
+}
+/* MODAL (POP-UP) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenu de la modal */
+.modal-content {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 700px;
+  max-height: 95%;
+  overflow-y: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(165, 131, 131, 0.2);
+}
+
+/* Titre dans la modal */
+.modal-title {
+  max-width: calc(100% - 40px);
+  margin-right: 40px;
+}
+
+/* Bouton de fermeture de la modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--black-color);
+  transition: all 0.3s;
+}
+
+.close:hover {
+  transform: scale(1.5);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Conteneur des images supplémentaires */
+.extra-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Images supplémentaires */
+.extra-images img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+  .projets-item {
+    padding: 5px;
+  }
+
+  .item-top p {
+    font-size: 0.7rem;
+  }
+
+  .item-text {
+    font-size: 0.55rem;
+    padding: 5px;
+  }
+
+  .projets-buttons button {
+    font-size: 0.5rem;
+    width: 30vw;
+    height: 50px;
+  }
+}
+
+/* Boutons de navigation des projets */
+.projets-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  padding: 100px 0 20px 0;
+  background-color: var(--white-color);
+}
+
+/* Style des boutons */
+.projets-title {
+  padding: 10px 20px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.projets-title:hover {
+  background-color: var(--secondary-color);
+}

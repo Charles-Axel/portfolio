@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Axel CHARLES Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/png" href="images/portfolio_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="name">Axel CHARLES</div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="#home" onclick="closeMenu()">Accueil</a></li>
+          <li><a href="#a_propos" onclick="closeMenu()">À propos</a></li>
+          <li><a href="#projets" onclick="closeMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <li>
+            <div class="custom-select-container">
+              <div class="custom-select">
+                <div class="custom-select-trigger" onclick="toggleOptions()">
+                  <img
+                    id="selectedImage"
+                    src="https://flagcdn.com/w40/fr.png"
+                    alt="Français"
+                  />
+                  <span id="selectedText">Français</span>
+                </div>
+                <div class="custom-select-options" id="optionsList">
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/gb.png', 'English', 'index_en.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/gb.png" alt="Anglais" />
+                    <span>Anglais</span>
+                  </div>
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/fr.png', 'Français', 'index.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/fr.png" alt="Français" />
+                    <span>Français</span>
+                  </div>
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/es.png', 'Español', 'index_es.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/es.png" alt="Espagnol" />
+                    <span>Espagnol</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="home" class="home-banner">
+        <div class="home-text">
+          <p>Salut, je suis</p>
+          <h2>Axel CHARLES</h2>
+          <p><span>Développeur</span> junior</p>
+          <div class="home-buttons">
+            <a href="CV_Axel_CHARLES.pdf" download class="home-cv">
+              Télécharger mon CV</a
+            >
+            <a href="#contact" class="home-contact">Me contacter</a>
+          </div>
+          <div class="home-links">
+            <a href="https://www.linkedin.com/in/axel-charles/" target="_blank"
+              ><img src="images/linkedin.png" alt="Linkedin"
+            /></a>
+            <a href="https://github.com/Charles-Axel" target="_blank"
+              ><img src="images/github.png" alt="GitHub"
+            /></a>
+          </div>
+        </div>
+        <img
+          src="images/photo_axel.png"
+          alt="Image du logo"
+          class="home-photo"
+          loading="lazy"
+        />
+      </section>
+    </header>
+
+    <main>
+      <section id="a_propos" class="main-text">
+        <img src="images/ordinateur.jpg" alt="Image ordinateur" />
+        <p>
+          Je m'appelle Axel CHARLES, étudiant en 2ᵉ année de BUT Informatique à
+          l'IUT de Lens. Passionné d'informatique et d'Esports, je suis
+          particulièrement intéressé par le développement web et la gestion de
+          bases de données.
+          <br />
+          <br />
+          Je maîtrise plusieurs langages de programmation, dont Java, Python
+          avec Flask, et Php avec Laravel. J'apprécie travailler en équipe et je
+          suis constamment motivé à apprendre et à relever de nouveaux défis.
+          <br />
+          <br />
+          Dynamique, persévérant et innovant, j'aime trouver des solutions
+          créatives aux problèmes techniques. Mes expériences m'ont permis de
+          renforcer mon esprit d'équipe et ma capacité à m'adapter à différents
+          environnements.
+        </p>
+      </section>
+
+      <section class="main-competences">
+        <h3>Mes compétences / Mes outils</h3>
+        <div class="competences-container">
+          <div class="competence-card">
+            <span
+              >HTML<img src="images/competences/html.png" alt="Logo HTML"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >CSS<img src="images/competences/css.png" alt="Logo CSS"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >TypeScript<img
+                src="images/competences/typescript.png"
+                alt="Logo TypeScript"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Laravel<img
+                src="images/competences/laravel.png"
+                alt="Logo Laravel"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Flask<img src="images/competences/flask.png" alt="Logo Flask"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Java<img src="images/competences/java.png" alt="Logo Java"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Python<img src="images/competences/python.svg" alt="Logo Python"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >PHP<img src="images/competences/php.svg" alt="Logo PHP"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Suite JetBrains<img
+                src="images/competences/jetbrains.png"
+                alt="Logo JetBrains"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Git<img src="images/competences/git.png" alt="Logo Git"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >Eclipse<img
+                src="images/competences/eclipse.svg"
+                alt="Logo Eclipse"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >VSCode<img src="images/competences/vscode.png" alt="Logo VSCode"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >SQL<img src="images/competences/sql.jpg" alt="Logo SQL"
+            /></span>
+          </div>
+          <div class="competence-card">
+            <span
+              >PostgreSQL<img
+                src="images/competences/postgresql.png"
+                alt="Logo PostgreSQL"
+            /></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="projets-buttons">
+        <a href="#projets"
+          ><button id="button1" class="projets-title">Mes projets</button></a
+        >
+        <a href="#projetsSae"
+          ><button id="button2" class="projets-title">
+            Mes projets de SAE
+          </button></a
+        >
+        <a href="#projetsCours"
+          ><button id="button3" class="projets-title">
+            Mes projets de cours
+          </button></a
+        >
+      </div>
+
+      <section id="projets" class="projets-section">
+        <!-- Conteneur des projets -->
+        <div class="projets-container">
+          <div class="projets-item">
+            <h3 class="item-title">Loldle</h3>
+            <img
+              src="images/projets/loldle_logo.png"
+              alt="Loldle"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Loldle</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ❌</p>
+                  <p>🕙 : 60 h</p>
+                </div>
+                <img
+                  src="images/projets/loldle_logo.png"
+                  alt="Loldle"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Ce projet est un jeu inspiré de "Wordle", mais avec des
+                  personnages issus de l'univers de League of Legends. Le but
+                  est de deviner un champion de League of Legends à partir
+                  d'indices qui changent à chaque tour. Le projet est réalisé en
+                  Java avec l'utilisation de JavaFX pour l'interface graphique
+                  et Derby JDBC pour la gestion de la base de données.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                  <li>Derby JDBC</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>
+                    Interface utilisateur interactive avec des éléments
+                    dynamiques.
+                  </li>
+                  <li>
+                    Gestion d'une base de données pour stocker les champions et
+                    les scores.
+                  </li>
+                  <li>
+                    Logique de jeu avec des indices progressifs pour chaque
+                    tentative.
+                  </li>
+                  <li>Mode daltonien qui modifie certaines couleurs.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img src="images/projets/loldle.png" alt="Loldle 1" />
+                <img src="images/projets/loldle_daltonien.png" alt="Loldle 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Haven Store</h3>
+            <img
+              src="images/projets/store_logo.png"
+              alt="Haven Store"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Haven Store</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ❌</p>
+                  <p>🕙 : 15 h</p>
+                </div>
+                <img
+                  src="images/projets/store_logo.png"
+                  alt="Haven Store"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Le projet "Haven Store" est une boutique en ligne conçue pour
+                  offrir une expérience d'achat fluide et sécurisée, mettant en
+                  avant des produits tendance et de qualité, allant des
+                  vêtements aux accessoires. Le site est structuré en plusieurs
+                  sections clés pour répondre aux besoins des utilisateurs.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>
+                    Affichage des produits avec prix et filtres de recherche.
+                  </li>
+                  <li>Connexion et inscription des utilisateurs.</li>
+                  <li>Affichage du profil et modification des informations.</li>
+                  <li>Affichage du produit plus en détails.</li>
+                  <li>Panier composé des articles commandés.</li>
+                  <li>Résumé du site et liens utiles.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/store_accueil.png"
+                  alt="Haven Store 1"
+                />
+                <img src="images/projets/store_login.png" alt="Haven Store 2" />
+                <img
+                  src="images/projets/store_register.png"
+                  alt="Haven Store 3"
+                />
+                <img
+                  src="images/projets/store_dashboard.png"
+                  alt="Haven Store 4"
+                />
+                <img
+                  src="images/projets/strore_filtre.png"
+                  alt="Haven Store 5"
+                />
+                <img
+                  src="images/projets/store_panier.png"
+                  alt="Haven Store 6"
+                />
+                <img src="images/projets/store_item.png" alt="Haven Store 7" />
+                <img
+                  src="images/projets/store_footer.png"
+                  alt="Haven Store 8"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">PolyCardia</h3>
+            <img
+              src="images/projets/polycardia_logo.png"
+              s
+              alt="PolyCardia"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">PolyCardia</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ✅</p>
+                  <p>🕙 : en cours ...</p>
+                </div>
+                <img
+                  src="images/projets/polycardia_logo.png"
+                  alt="PolyCardia"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Polycardia est un site de jeu de cartes basé sur l'univers de
+                  différents jeux vidéo. Il est développé en Python et Flask, et
+                  une base de données SQLite, pour le stockage des cartes et
+                  utilisateurs. Le jeu permet aux utilisateurs de collecter des
+                  cartes, et dans le futur de construire leur propre deck et de
+                  participer à des combats.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>
+                    Collecte et gestion de cartes dans une base de données.
+                  </li>
+                  <li>Création de profil et gestion d'utilisateurs.</li>
+                  <li>Mode de combat entre decks (à venir).</li>
+                  <li>Minuteur pour ouvrir un booster gratuitement.</li>
+                  <li>Monnaie pour accélérer le minuteur.</li>
+                  <li>Quêtes pour obtenir de la monnaie (à venir).</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/polycardia_accueil.png"
+                  alt="PolyCardia 1"
+                />
+                <img
+                  src="images/projets/polycardia_login.png"
+                  alt="PolyCardia 2"
+                />
+                <img
+                  src="images/projets/polycardia_pull.png"
+                  alt="PolyCardia 3"
+                />
+                <img
+                  src="images/projets/polycardia_booster.png"
+                  alt="PolyCardia 4"
+                />
+                <img
+                  src="images/projets/polycardia_timer.png"
+                  alt="PolyCardia 5"
+                />
+                <img
+                  src="images/projets/polycardia_cards.png"
+                  alt="PolyCardia 6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Blackjack</h3>
+            <img
+              src="images/projets/blackjack_logo.png"
+              alt="Blackjack"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Blackjack</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ❌</p>
+                  <p>🕙 : 15 h</p>
+                </div>
+                <img
+                  src="images/projets/blackjack_logo.png"
+                  alt="Blackjack"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Ce projet implémente le jeu de cartes Blackjack contre un
+                  ordinateur. Il utilise Java et JavaFX pour créer une interface
+                  fluide où l'utilisateur peut tirer des cartes, rester ou
+                  demander une nouvelle carte. Le back-end en Java gère la
+                  logique du jeu, notamment les règles de calcul du score et la
+                  comparaison avec la main de l'ordinateur. Le but est d'obtenir
+                  un score de 21 ou de se rapprocher le plus possible sans
+                  dépasser ce nombre.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>Interface utilisateur interactive avec JavaFX.</li>
+                  <li>
+                    Gestion de la logique de jeu avec tirage automatique des
+                    cartes.
+                  </li>
+                  <li>
+                    Calcul des scores et affichage des résultats en temps réel.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img src="images/projets/blackjack.png" alt="Blackjack 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetsSae" class="projets-section">
+        <!-- Conteneur des projets -->
+        <div class="projets-container">
+          <div class="projets-item">
+            <h3 class="item-title">Gestion de compétitions</h3>
+            <img
+              src="images/projets/competition_logo.png"
+              alt="Compétitions"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Gestion de compétitions</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ✅</p>
+                  <p>🕙 : 24 h</p>
+                </div>
+                <img
+                  src="images/projets/competition_logo.png"
+                  alt="Compétitions"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Ce projet est un site web qui permet de gérer des compétitions
+                  de manière automatisée. Il est construit avec PHP pour le côté
+                  serveur, avec SQLite pour la gestion des données des
+                  participants et des résultats. L'interface est réalisée en
+                  HTML et CSS, offrant une expérience fluide et professionnelle
+                  pour les organisateurs et les participants. Ce site inclut des
+                  fonctionnalités telles que l'inscription des participants, la
+                  mise à jour des résultats en temps réel et la consultation des
+                  classements.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>
+                    Création de compétitions, d'équipe, de challenges, ...
+                  </li>
+                  <li>Classement mis à jour en temps réel.</li>
+                  <li>Gestion de profil.</li>
+                  <li>Gestion des droits (Admin).</li>
+                  <li>Exportation des résultats en Markdown.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/competition_accueil.png"
+                  alt="Compétitions 1"
+                />
+                <img
+                  src="images/projets/competition_accueil2.png"
+                  alt="Compétitions 2"
+                />
+                <img
+                  src="images/projets/competition_challenges.png"
+                  alt="Compétitions 3"
+                />
+                <img
+                  src="images/projets/competition_competition.png"
+                  alt="Compétitions 4"
+                />
+                <img
+                  src="images/projets/competition_equipes.png"
+                  alt="Compétitions 5"
+                />
+                <img
+                  src="images/projets/competition_classement.png"
+                  alt="Compétitions 6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Marathon Web - Voyages</h3>
+            <img
+              src="images/projets/marathon_logo.png"
+              alt="Marathon Web"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Marathon Web - Voyages</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ✅</p>
+                  <p>🕙 : 36 h</p>
+                </div>
+                <img
+                  src="images/projets/marathon_logo.png"
+                  alt="Marathon Web"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Un site de gestion de carnet de voyage. Il permet aux
+                  utilisateurs de créer, éditer, afficher et supprimer des
+                  entrées de voyage, grâce à un système CRUD (Create, Read,
+                  Update, Delete). Le site inclut également des fonctionnalités
+                  interactives, telles que la possibilité de laisser des
+                  commentaires et de liker les publications des autres
+                  utilisateurs. Ce projet est développé en PHP pour la gestion
+                  du backend, avec HTML et CSS pour la création de l'interface
+                  utilisateur. Il permet aux voyageurs de partager leurs
+                  expériences et de recevoir des retours de la communauté.
+                  <br />
+                  <br />
+                  Ce projet a été fait en groupe de 7 et en collaboration avec
+                  des étudiants d'un autre département (Design, graphisme, etc)
+                  dans un temps imparti de 36h.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>
+                    Création, édition et suppression de voyage, d'étape et ajout
+                    de photos.
+                  </li>
+                  <li>Visualisation du voyage et de chaque étape.</li>
+                  <li>Filtrage des voyages par mers et océans.</li>
+                  <li>
+                    Commenter et liker les voyages des autres utilisateurs.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img
+                  src="images/projets/marathon_accueil.png"
+                  alt="Marathon Web 1"
+                />
+                <img
+                  src="images/projets/marathon_non_publies.png"
+                  alt="Marathon Web 2"
+                />
+                <img
+                  src="images/projets/marathon_voyage.png"
+                  alt="Marathon Web 3"
+                />
+                <img
+                  src="images/projets/marathon_etapes.png"
+                  alt="Marathon Web 4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">LensJudge</h3>
+            <img
+              src="images/projets/lensjudge_logo.png"
+              alt="LensJudge"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">LensJudge</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ✅</p>
+                  <p>🕙 : 35 h</p>
+                </div>
+                <img
+                  src="images/projets/lensjudge_logo.png"
+                  alt="LensJudge"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Un système de jugement automatique conçu pour des compétitions
+                  de programmation. Il permet aux utilisateurs de soumettre un
+                  fichier de code dans l'un des quatre langages de programmation
+                  suivants : Python, Java, C et C++. Le système compare la
+                  sortie générée par le programme avec une réponse attendue,
+                  après avoir compilé et exécuté le code. Ce projet est
+                  développé en Java et vise à automatiser l'évaluation des
+                  solutions proposées lors de compétitions ou d'examens de
+                  programmation. Il offre une solution efficace pour la
+                  vérification de réponses dans divers langages.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Java</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>
+                    Prise en charge de 4 langages : Python, Java, C et C++.
+                  </li>
+                  <li>
+                    Compilation et exécution automatiques des programmes soumis.
+                  </li>
+                  <li>Comparaison des sorties avec une réponse attendue.</li>
+                  <li>Gestion des erreurs de compilation et d'exécution.</li>
+                  <li>Rapports détaillés pour chaque soumission.</li>
+                </ul>
+              </div>
+
+              <div class="extra-images">
+                <img src="images/projets/lensJudge.png" alt="LensJudge 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetsCours" class="projets-section">
+        <!-- Conteneur des projets -->
+        <div class="projets-container">
+          <div class="projets-item">
+            <h3 class="item-title">Bomberman</h3>
+            <img
+              src="images/projets/bomberman_logo.png"
+              alt="Bomberman"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Bomberman</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ✅</p>
+                  <p>🕙 : 40 h</p>
+                </div>
+                <img
+                  src="images/projets/bomberman_logo.png"
+                  alt="Bomberman"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Une adaptation du jeu classique Bomberman, développée en Java
+                  avec JavaFX. Le jeu consiste à poser des bombes pour détruire
+                  des obstacles et éliminer les adversaires. Le projet inclut la
+                  gestion des mouvements des joueurs, des explosions et des
+                  collisions dans un environnement 2D. L'interface en JavaFX
+                  permet d'afficher les éléments du jeu de manière dynamique et
+                  interactive, avec des contrôles simples pour les déplacements
+                  et les actions des joueurs.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>Pose des bombes.</li>
+                  <li>Déplacement dans l'environnement.</li>
+                  <li>Mouvements aléatoires des ennemis.</li>
+                  <li>Différentes maps et configurations de murs.</li>
+                  <li>Plusieurs types de bombes.</li>
+                  <li>Nombre de vies.</li>
+                  <li>Interactions entre objets.</li>
+                  <li>Musiques en fonction de la map.</li>
+                </ul>
+              </div>
+              <div class="extra-images">
+                <img src="images/projets/bomberman1.png" alt="Bomberman 1" />
+                <img src="images/projets/bomberman2.png" alt="Bomberman 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">The price is right</h3>
+            <img
+              src="images/projets/price_logo.png"
+              alt="The price is right"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">The price is right</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ✅</p>
+                  <p>🕙 : 12 h</p>
+                </div>
+                <img
+                  src="images/projets/price_logo.png"
+                  alt="The price is right"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Inspiré du jeu télévisé, ce projet permet aux utilisateurs de
+                  deviner le prix d'objets. Il utilise Python pour la logique et
+                  pour communiquer avec une API qui fournit les prix réels des
+                  objets d'Amazon. Le frontend est réalisé avec HTML et CSS,
+                  offrant une interface interactive où les utilisateurs peuvent
+                  soumettre leurs réponses et obtenir des retours en temps réel.
+                  Nous avons choisi un thème Minecraft pour les bruitages et les
+                  décors, car nous avons le droits de choisir un style amusant.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>API</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>Ajouter un item.</li>
+                  <li>Page d'accueil avec menu.</li>
+                  <li>Mode nuit/jour.</li>
+                  <li>Tableau des scores.</li>
+                  <li>Thèmes pour chaque catégorie d'items.</li>
+                  <li>Traduction EN/FR.</li>
+                  <li>Mode multijoueur.</li>
+                  <li>Bruitages pour certaines actions.</li>
+                </ul>
+              </div>
+              <div class="extra-images">
+                <img
+                  src="images/projets/price_accueil.png"
+                  alt="The price is right 1"
+                />
+                <img
+                  src="images/projets/price_ajout.png"
+                  alt="The price is right 2"
+                />
+                <img
+                  src="images/projets/price_submit.png"
+                  alt="The price is right 3"
+                />
+                <img
+                  src="images/projets/price_english.png"
+                  alt="The price is right 4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="projets-item">
+            <h3 class="item-title">Puissance 4</h3>
+            <img
+              src="images/projets/puissance4_logo.png"
+              alt="Puissance 4"
+              class="item-image"
+            />
+          </div>
+
+          <!-- MODAL - POP-UP -->
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="item-title modal-title">Puissance 4</h3>
+              <div class="item-top">
+                <div class="item-info">
+                  <p>En équipe : ❌</p>
+                  <p>🕙 : 8 h</p>
+                </div>
+                <img
+                  src="images/projets/puissance4_logo.png"
+                  alt="Puissance 4"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Une version numérique du jeu Puissance 4 réalisée en Java avec
+                  JavaFX. Le jeu permet à l'utilisateur de jouer contre un autre
+                  joueur en mode local. La logique du jeu gère les règles de
+                  placement des pions, la vérification des lignes gagnantes
+                  (horizontales, verticales et diagonales) et l'interactivité
+                  avec l'interface graphique.
+                </p>
+                <hr />
+                <strong>Technologies :</strong>
+                <ul>
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                </ul>
+                <strong>Fonctionnalités :</strong>
+                <ul>
+                  <li>Placement des pions dans les colonnes.</li>
+                  <li>Alternance entre les deux joueurs.</li>
+                  <li>Vérification des conditions de victoire.</li>
+                  <li>Actualisation du meilleur score.</li>
+                </ul>
+              </div>
+              <div class="extra-images">
+                <img src="images/projets/puissance4.png" alt="Puissance 4 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>Axel CHARLES</h2>
+      <div class="footer-contact">
+        <ul>
+          <li>
+            <img src="images/mail.png" />
+            <p>charlesaxel59@gmail.com</p>
+          </li>
+          <li>
+            <img src="images/phone.png" />
+            <p>06 19 75 48 54</p>
+          </li>
+          <li>
+            <img src="images/position.png" />
+            <p>
+              Nord, France
+              <img
+                class="footer-flag"
+                src="images/french_flag.jpg"
+                alt="drapeau français"
+              />
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/axel-charles/" target="_blank"
+          ><img src="images/linkedin_white.png" alt="Linkedin"
+        /></a>
+        <a href="https://github.com/Charles-Axel" target="_blank"
+          ><img src="images/github_white.png" alt="GitHub"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
